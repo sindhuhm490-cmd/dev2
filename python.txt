@@ -2,6 +2,20 @@ Create a Docker image for an application stored in a local repository and run th
 application using docker image.
 
 
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello Jenkins'
+            }
+        }
+    }
+}
+
+
+
 
 FROM eclipse-temurin:17
 
